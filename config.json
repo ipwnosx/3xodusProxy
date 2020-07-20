@@ -1,0 +1,5 @@
+{
+    "discord_token": "TOKEN_HERE",
+    "command_prefix": "]",
+    "permissions": false
+}
