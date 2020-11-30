@@ -11,7 +11,7 @@ import random
 class Proxy(commands.Cog, command_attrs=dict(hidden=True)):
     @staticmethod
     def scrapeHTTPS(amt=500):
-        data = requests.get("https://proxies24.com/api?token=49f665bf5f-e3206efa4707-f8368469ee&type=elite&plain&software").text.splitlines()
+        data = requests.get("PUT-API-URL-HERE").text.splitlines()
         random.shuffle(data)
         if len(data) < amt:
             written = data
@@ -22,7 +22,7 @@ class Proxy(commands.Cog, command_attrs=dict(hidden=True)):
 
     @staticmethod
     def scrapeSOCKS4(amt=500):
-        data = requests.get("https://proxies24.com/api?token=49f665bf5f-e3206efa4707-f8368469ee&type=socks4&plain&software").text.splitlines()
+        data = requests.get("PUT-API-URL-HERE").text.splitlines()
         random.shuffle(data)
         if len(data) < amt:
             written = data
@@ -33,7 +33,7 @@ class Proxy(commands.Cog, command_attrs=dict(hidden=True)):
 
     @staticmethod
     def scrapeSOCKS5(amt=500):
-        data = requests.get("https://proxies24.com/api?token=49f665bf5f-e3206efa4707-f8368469ee&type=socks5&plain&software").text.splitlines()
+        data = requests.get("PUT-API-URL-HERE").text.splitlines()
         random.shuffle(data)
         if len(data) < amt:
             written = data
